@@ -10,17 +10,19 @@
     <script src="https://kit.fontawesome.com/24d7844539.js"></script>
     <title>Storage</title>
 </head>
+
+
 <body>
     <div class="container-fluid">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Search</a>
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-search"></i>Search</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Add File</a>
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-file-upload"></i>Add File</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Admin Panel</a>
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-cog"></i>Admin Panel</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
@@ -28,10 +30,11 @@
 
                 <h2>Search for</h2>
                 <div class="search-area row col-sm-12">
-                    <div class="col-sm-6">
+                    <div class="col-2"></div>
+                    <div class="col-4">
                       <div class="form-check-optie">
                         <input class="form-check-input" type="radio" name="itemRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="itemRadios">
+                        <label class="form-check-label radius" for="itemRadios">
                           Person
                         </label>
                       </div>
@@ -48,10 +51,10 @@
                         <label class="form-check-label" for="itemCheck">Campus</label>
                       </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-4">
                       <div class="form-check-optie">
                         <input class="form-check-input" type="radio" name="itemRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="itemRadios">
+                        <label class="form-check-label radius" for="itemRadios">
                           Document
                         </label>
                       </div>
@@ -64,18 +67,23 @@
                         <label class="form-check-label" for="itemCheck">Document Type</label>
                       </div>
                     </div>
+                    <div class="col-2"></div>
                   </div>
+
                   <!-- Search balk -->
-                  <div class="searchbar-search row">
-                    <div class="col-10">
-                      <input class="form-control" id="myInput" type="text" placeholder="Search" aria-label="Search" data-toggle="modal" data-target="#exampleModalLong">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 input-group">
+                      <input type="text" class="form-control" placeholder="Search for person or document">
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
                     </div>
-                    <div>
-                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                      Search
-                      </button>
-                    </div>
+                    <div class="col-2"></div>
                   </div>
+                  
                   <!-- Search Results -->
                   <h2>Search results</h2>
                     <table class="col-md-12">
@@ -86,7 +94,7 @@
                           <th class="campus">Campus</th>
                           <th class="attachement">Document</th>
                           <th class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-tick" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1"></label>
                           </th>
                       </tr>
@@ -97,7 +105,7 @@
                           <th class="campus">Genk</th>
                           <th class="attachement">laptopcontract.docx</th>
                           <th class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-tick" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1"></label>
                           </th>
                       </tr>
@@ -108,7 +116,7 @@
                           <th class="campus">Genk</th>
                           <th class="attachement">examplecss.css</th>
                           <th class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-tick" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1"></label>
                           </th>
                       </tr>
@@ -119,7 +127,7 @@
                           <th class="campus">Genk</th>
                           <th class="attachement">vdab.docx</th>
                           <th class="form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input type="checkbox" class="form-check-tick" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1"></label>
                           </th>
                       </tr>
@@ -133,21 +141,20 @@
             
             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <!-- Search form -->
+                <h2>Add file</h2>
+
                 <div class="row">
-                </div>
-                <div class="row mt-2">
-                <div class="col-1"></div>
-                <div class="col-8">
-                <input class="form-control" id="myInput" type="text" placeholder="Search" aria-label="Search" data-toggle="modal" data-target="#exampleModalLong">
-                </div>
-                <div col-3>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                  Search
-                </button>
-                </div>
-                </div>
-
-
+                    <div class="col-2"></div>
+                    <div class="col-8 input-group">
+                      <input type="text" class="form-control" id="myInput" placeholder="Search" aria-label="Search" data-toggle="modal" data-target="#exampleModalLong">
+                      <div class="input-group-append">
+                        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#exampleModal">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="col-2"></div>
+                  </div>
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -181,7 +188,7 @@
                                       </tr>
                                       <tr>
                                         <th scope="row">2</th>
-                                        <td>Carolinet</td>
+                                        <td>Caroline</td>
                                         <td>Schevers</td>
                                         <td><button type="button" class="btn btn-primary" data-toggle="modal" data-dismiss="modal" data-target="#exampleModal2">
                                             Upload
@@ -271,198 +278,21 @@
             </div>
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
-                <h1>Admin panel</h1>
-                <div class="row">
-                    <div class="admin-panel-content col-5 border border-primary">
-                        <img src="./img/chart-1.png" alt="" width="400px">
+                <h2>Admin panel</h2>
+                <div class="row d-flex justify-content-center">
+                    <div class="admin-panel-content col-2 p-2">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#data-1">
-                            Data
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-1">
+                          <i class="fas fa-database"></i> Button 1
                         </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="data-1" tabindex="-1" role="dialog" aria-labelledby="dataLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="dataLabel">Data</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-panel-content col-5 border border-primary">
-                        <img src="./img/chart-2.png" alt="">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#data-2">
-                            Data 2
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="data-2" tabindex="-1" role="dialog" aria-labelledby="data2Label"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="data2Label">Data 2</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="admin-panel-content col-2 border border-primary p-2">
-                        <i class="fas fa-users"></i>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#users">
-                            Users
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="users" tabindex="-1" role="dialog" aria-labelledby="usersLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="usersLabel">Users</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="admin-panel-content col-2 border border-primary p-2">
-                        <i class="fas fa-building"></i>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#campus">
-                            Campus
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="campus" tabindex="-1" role="dialog" aria-labelledby="campusLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="campusLabel">Campus</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-panel-content col-2 border border-primary p-2">
-                        <i class="fas fa-file"></i>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#documents">
-                            Documents
-                        </button>
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="documents" tabindex="-1" role="dialog"
-                            aria-labelledby="documentsLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="documentslabel">Documents</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="admin-panel-content col-2 border border-primary p-2">
-                        <i class="fas fa-database"></i>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#stats">
-                            Stats
-                        </button>
-
+      
                         <!-- Modal -->
                         <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
                             aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="statsLabel">Stats</h5>
+                                        <h5 class="modal-title" id="button-1">Stats</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
@@ -478,6 +308,244 @@
                             </div>
                         </div>
                     </div>
+      
+                    <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-2">
+                        <i class="fas fa-database"></i> Button 2
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-2">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                    <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-3">
+                        <i class="fas fa-database"></i> Button 3
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-3">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                    <div class="w-100"></div>
+                     <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-">
+                        <i class="fas fa-database"></i> Button 4
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-4">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+
+                    <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-5">
+                        <i class="fas fa-database"></i> Button 5
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-5">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                    <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-6">
+                        <i class="fas fa-database"></i> Button 6
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-6">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                    <div class="w-100"></div>
+                    <div class="admin-panel-content col-2 p-2">
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-7">
+                        <i class="fas fa-database"></i> Button 7
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                          aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="button-7">Stats</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <span aria-hidden="true">&times;</span>
+                                      </button>
+                                  </div>
+                                  <div class="modal-body">
+                                      ...
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary"
+                                          data-dismiss="modal">Close</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+    
+                  <div class="admin-panel-content col-2 p-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-8">
+                      <i class="fas fa-database"></i> Button 8
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="button-8">Stats</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+                <div class="admin-panel-content col-2 p-2">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#button-9">
+                    <i class="fas fa-database"></i> Button 9
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="stats" tabindex="-1" role="dialog" aria-labelledby="statsLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h5 class="modal-title" id="button-9">Stats</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <div class="modal-body">
+                                  ...
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary"
+                                      data-dismiss="modal">Close</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
 
                 </div>
             </div>

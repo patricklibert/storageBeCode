@@ -4,6 +4,14 @@
 body {
     font-family: 'Nunito', sans-serif;
     margin: 20px;
+    font-size: 0.9rem;
+}
+
+h2 {
+    color: #273646;
+    border-bottom: 1px solid #00b361;
+    font-size: 1.575rem;
+    font-weight: 500;
 }
 
 h2, .search-area, table {
@@ -11,12 +19,14 @@ h2, .search-area, table {
     margin-bottom: 20px;
 }
 
-.form-check-optie {
-    padding-left: 20px;
+.fas {
+    color: #273646;
+    margin-right: 7px;
 }
 
-.form-check {
-    padding-left: 70px
+button .fas {
+    color: white;
+    margin-right: 7px;
 }
 
 .searchbar-search {
@@ -29,6 +39,11 @@ table {
     width: 100%;
 }
 
+.table-header th, thead tr th {
+    background-color: #273646;
+    color: white;
+}
+
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -36,17 +51,57 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: rgba(79, 255, 174, 0.1);
+}
+
+tr:nth-child(odd) {
+    background-color: white;
 }
 
 th.form-check  {
     text-align: center;
 }
 
+.form-check  {
+    padding-left: 0.75rem;
+}
+
+.col-4 {
+    padding-left: 0.75rem;
+}
+
 tr.table-item th {
     font-weight: lighter;
 }
 
-.btn-primary {
-    background-color: #14070E;
+.btn-primary, .btn-secondary {
+    background-color: #273646;
+}
+
+.nav-link {
+    color: #273646;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #273646;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(26, 12, 180, 0.6);
+}
+
+.modal-title {
+    color: #273646;
+}
+
+.search-area .form-check {
+    margin-left: 15px;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: rgba(79, 255, 174);
+    border: rgba(79, 255, 174);
+    color: #273646
+}
+
+.nav-link:hover {
+    color: #259260;
 }
