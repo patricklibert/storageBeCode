@@ -76,6 +76,12 @@ tr.table-item th {
 
 .btn-primary, .btn-secondary {
     background-color: #273646;
+    border: 1px #273646;
+}
+
+.btn-primary:focus, .btn-primary:active, .btn-secondary:focus, .btn-secondary:active{
+    outline: none;
+    box-shadow: none;
 }
 
 .nav-link {
@@ -97,9 +103,9 @@ tr.table-item th {
 }
 
 .btn-primary:hover, .btn-secondary:hover {
-    background-color: rgba(79, 255, 174);
-    border: rgba(79, 255, 174);
-    color: #273646
+    background-color: rgb(79, 255, 174);
+    border:1px rgb(79, 255, 174) ;
+    color: #273646;
 }
 
 .nav-link:hover {
