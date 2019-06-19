@@ -46,3 +46,7 @@ th.form-check  {
 tr.table-item th {
     font-weight: lighter;
 }
+
+.btn-primary {
+    background-color: #14070E;
+}
