@@ -33,48 +33,66 @@
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
         <h2>Search for</h2>
-        <div class="search-area row col-sm-12">
-          <div class="col-2"></div>
-          <div class="col-4">
-            <div class="form-check-optie">
-              <input class="form-check-input" type="radio" name="itemRadios" id="exampleRadios1" value="option1"
-                checked>
-              <label class="form-check-label radius" for="itemRadios">
-                Person
-              </label>
+        <div class="container">
+            <div class="row ">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="form-check-optie">
+                        <label class="container round">
+                            <span class="checkText d-flex align-center">Person</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="container">
+                            <span class="checkText d-flex align-center">Name</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="container">
+                            <span class="checkText d-flex align-center">Group</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="container">
+                            <span class="checkText d-flex align-center">Campus</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                </div>
+        
+                <div class="col-4">
+                    <div class="form-check-optie">
+                        <label class="container round">
+                            <span class="checkText d-flex align-center">Document</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="container">
+                            <span class="checkText d-flex align-center">Document Name</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="container">
+                            <span class="checkText d-flex align-center">Document Type</span>
+                            <input type="checkbox">
+                            <span class="checkmark d-flex align-center"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="itemCheck">
-              <label class="form-check-label" for="itemCheck">Name</label>
             </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="itemCheck">
-              <label class="form-check-label" for="itemCheck">Group</label>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="itemCheck">
-              <label class="form-check-label" for="itemCheck">Campus</label>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="form-check-optie">
-              <input class="form-check-input" type="radio" name="itemRadios" id="exampleRadios1" value="option1"
-                checked>
-              <label class="form-check-label radius" for="itemRadios">
-                Document
-              </label>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="itemCheck">
-              <label class="form-check-label" for="itemCheck">Document Name</label>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="itemCheck">
-              <label class="form-check-label" for="itemCheck">Document Type</label>
-            </div>
-          </div>
-          <div class="col-2"></div>
-        </div>
 
         <!-- Search balk -->
         <div class="row">
@@ -99,10 +117,7 @@
             <th class="group">Group</th>
             <th class="campus">Campus</th>
             <th class="attachement">Document</th>
-            <th class="form-check">
-              <input type="checkbox" class="form-check-tick" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1"></label>
-            </th>
+            <th class="download text-center"><i class="fas fa-file-download"></i></th>
           </tr>
           <tr class="table-item">
             <th class="firstName">Caroline</th>

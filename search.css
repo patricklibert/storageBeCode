@@ -39,7 +39,7 @@ table {
     width: 100%;
 }
 
-.table-header th, thead tr th {
+.table-header th, thead tr th, th .fas {
     background-color: #273646;
     color: white;
 }
@@ -98,10 +98,6 @@ tr.table-item th {
     color: #273646;
 }
 
-.search-area .form-check {
-    margin-left: 15px;
-}
-
 .btn-primary:hover, .btn-secondary:hover {
     background-color: rgb(79, 255, 174);
     border:1px rgb(79, 255, 174) ;
@@ -110,4 +106,85 @@ tr.table-item th {
 
 .nav-link:hover {
     color: #259260;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: rgb(79, 255, 174);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .round .checkmark {
+      border-radius: 50%
+  }
+
+  span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.9rem;
+}
+
+div.form-check {
+    margin-left: 25px;
 }
