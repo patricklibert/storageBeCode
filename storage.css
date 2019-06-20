@@ -218,3 +218,7 @@ label.container.container.square.results {
     height: 150px;
     width: 150px;
 }
+
+.admin-panel-btn p {
+    margin-bottom: 0
+}
