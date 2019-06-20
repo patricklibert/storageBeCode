@@ -126,8 +126,10 @@
             <th class="campus">Genk</th>
             <th class="attachement">laptopcontract.docx</th>
             <th class="form-check">
-              <input type="checkbox" class="form-check-tick" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1"></label>
+                <label class="container square results">
+                    <input type="checkbox">
+                    <span class="checkmark results"></span>
+                </label>
             </th>
           </tr>
           <tr class="table-item">
@@ -137,9 +139,11 @@
             <th class="campus">Genk</th>
             <th class="attachement">examplecss.css</th>
             <th class="form-check">
-              <input type="checkbox" class="form-check-tick" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1"></label>
-            </th>
+              <label class="container square results">
+                  <input type="checkbox">
+                  <span class="checkmark results"></span>
+              </label>
+          </th>
           </tr>
           <tr class="table-item">
             <th class="firstName">Patrick</th>
@@ -148,9 +152,11 @@
             <th class="campus">Genk</th>
             <th class="attachement">vdab.docx</th>
             <th class="form-check">
-              <input type="checkbox" class="form-check-tick" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1"></label>
-            </th>
+              <label class="container square results">
+                  <input type="checkbox">
+                  <span class="checkmark results"></span>
+              </label>
+          </th>
           </tr>
         </table>
         <!-- Download button-->
@@ -309,243 +315,278 @@
       <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
 
         <h2>Admin panel</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-1">
-              <i class="fas fa-database"></i> Button 1
-            </button>
+        <div class="d-flex justify-content-center">
+            <div class="row ">
+                <div class="col-2"></div>
+                <div class="col-8 d-flex flex-wrap justify-content-center">
+                    
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-1">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 1</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-2">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 2</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center ">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-3">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 3</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                data-toggle="modal" data-target="#button-4">
+                                <i class="fas fa-database"></i>
+                                <p>Button 4</p>
+                            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="button-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-2">
-              <i class="fas fa-database"></i> Button 2
-            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="button-4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                data-toggle="modal" data-target="#button-5">
+                                <i class="fas fa-database"></i>
+                                <p>Button 5</p>
+                            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="button-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-3">
-              <i class="fas fa-database"></i> Button 3
-            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="button-5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                data-toggle="modal" data-target="#button-6">
+                                <i class="fas fa-database"></i>
+                                <p>Button 6</p>
+                            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="button-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
+                            <!-- Modal -->
+                            <div class="modal fade" id="button-6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-1">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 7</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-1" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-2">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 8</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-2" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="admin-panel-content col-sm-6 col-md-4 col-lg-4 p-2 d-flex justify-content-center ">
+                                <button type="button" class="btn btn-primary shadow-none admin-panel-btn"
+                                    data-toggle="modal" data-target="#button-3">
+                                    <i class="fas fa-database"></i>
+                                    <p>Button 9</p>
+                                </button>
+    
+                                <!-- Modal -->
+                                <div class="modal fade" id="button-3" tabindex="-1" role="dialog"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>             
                 </div>
-              </div>
+                <div class="col-2"></div>
             </div>
-          </div>
-          <div class="w-100"></div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-4">
-              <i class="fas fa-database"></i> Button 4
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-5">
-              <i class="fas fa-database"></i> Button 5
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-6">
-              <i class="fas fa-database"></i> Button 6
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-100"></div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-7">
-              <i class="fas fa-database"></i> Button 7
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-8">
-              <i class="fas fa-database"></i> Button 8
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="admin-panel-content col-2 p-2">
-            <button type="button" class="btn btn-primary shadow-none" data-toggle="modal" data-target="#button-9">
-              <i class="fas fa-database"></i> Button 9
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="button-9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Stats</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
 
 

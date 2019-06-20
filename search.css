@@ -50,14 +50,6 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: rgba(79, 255, 174, 0.1);
-}
-
-tr:nth-child(odd) {
-    background-color: white;
-}
-
 th.form-check  {
     text-align: center;
 }
@@ -91,7 +83,7 @@ tr.table-item th {
 
 .form-control:focus {
     border-color: #273646;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(26, 12, 180, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(39, 54, 70, 0.6);
 }
 
 .modal-title {
@@ -120,51 +112,53 @@ tr.table-item th {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
+}
+
+/* Hide the browser's default checkbox */
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
+}
+
+/* Create a custom checkbox */
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
     height: 15px;
     width: 15px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
     background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
+}
+
+/* On mouse-over, add a grey background color */
+.container.round:hover input ~ .checkmark,
+.container.square:hover input ~ .checkmark {
+    background-color: #273646;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container.round input:checked ~ .checkmark,
+.container.square input:checked ~ .checkmark {
     background-color: rgb(79, 255, 174);
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
     display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
     left: 5px;
     top: 2px;
     width: 5px;
@@ -174,17 +168,53 @@ tr.table-item th {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
-  .round .checkmark {
-      border-radius: 50%
-  }
+.round .checkmark {
+    border-radius: 50%
+}
 
-  span {
+span {
     font-family: 'Nunito', sans-serif;
     font-size: 0.9rem;
 }
 
 div.form-check {
     margin-left: 25px;
+}
+
+span.checkmark.results {
+    position: relative;
+    
+}
+
+th.form-check {
+    display: table-cell;
+}
+
+label.container.container.square.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.fas.fa-file-download {
+    color: white;
+    margin: 0;
+}
+
+.admin-panel-content .fas {
+    color: #273646;
+    font-size: 52px;
+    margin-bottom: 10px;
+}
+
+.admin-panel-btn {
+    color: #273646;
+    border: solid 1px #273646;
+    background-color: white;
+    height: 150px;
+    width: 150px;
 }
